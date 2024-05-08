@@ -1,0 +1,12 @@
+body{
+    background-image: linear-gradient(to top, #e7627d 30%, #b8235a 40%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    font-family: x;
+    font-size: larger;
+}
+@font-face {
+    font-family: x;
+    src: url(./assets/AlegreyaSansSC-Italic.ttf);
+}
+#home{
+    background-image: linear-gradient(to right top,#801357 51%, #3d1635 74%, #1c1a27 100%);
+}
