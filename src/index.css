@@ -10,3 +10,6 @@ body{
 #home{
     background-image: linear-gradient(to right top,#801357 51%, #3d1635 74%, #1c1a27 100%);
 }
+#main{
+    min-height: 100vh;
+}

@@ -9,7 +9,7 @@ function Read() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/users/` + id)
+      .get(`https://emp-server-5umk.onrender.com/users/` + id)
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);

@@ -10,7 +10,7 @@ function Home() {
 
     const navigate = useNavigate()
     useEffect(() => {
-        axios.get('http://localhost:3000/users')
+        axios.get('https://emp-server-5umk.onrender.com/users')
             .then(res => setData(res.data))
             .catch(err => console.log(err))
     }, [])
@@ -18,7 +18,7 @@ function Home() {
     const handleDelete = (id)=>{
         const confirm = window.confirm("Would you like to delete ?")
         if (confirm) {
-            axios.delete('http://localhost:3000/users/'+id)
+            axios.delete('https://emp-server-5umk.onrender.com/users/'+id)
             .then(res=>{
                 navigate('/')
                 location.reload('/')
@@ -26,7 +26,7 @@ function Home() {
         }
     }
     return (
-        <div className='d-flex flex-column justify-content-center align-items-center'>
+        <div className='d-flex flex-column justify-content-center align-items-center' id='main'>
             <h1 className='text-white mt-3'>List of Users</h1>
             <div className='w-75 border shadow p-4 rounded' id='home' >
                 <div className='d-flex justify-content-end mb-3'><Link to="/create" className='btn btn-success'>Add +</Link></div>

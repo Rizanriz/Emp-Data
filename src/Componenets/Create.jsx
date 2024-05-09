@@ -14,7 +14,7 @@ function Create() {
   const navigate = useNavigate()
   const handleSubmit = (event)=>{
       event.preventDefault()
-      axios.post('http://localhost:3000/users',values)
+      axios.post('https://emp-server-5umk.onrender.com/users',values)
         .then(res => {
           console.log(res)
           navigate("/")
@@ -23,7 +23,7 @@ function Create() {
   }
 
   return (
-    <div className='d-flex w-100 vh-100 justify-content-center align-items-center '>
+    <div className='d-flex w-100 vh-100 justify-content-center align-items-center' >
       <div className='w-50 border bg-white shadow px-5 pt-3 pb-5 rounded text-bold'>
         <h1>Add a User</h1>
         <form onSubmit={handleSubmit}>
